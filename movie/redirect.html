@@ -1,0 +1,5 @@
+<script>
+  const url = new URL(window.location.href);
+  const id = url.pathname.split('/').pop();
+  window.location = "myapp://movie/" + id;
+</script>
