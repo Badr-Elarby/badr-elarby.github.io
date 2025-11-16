@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Opening App...</title>
+</head>
+<body>
+  <script>
+    const url = new URL(window.location.href);
+    const parts = url.pathname.split('/');
+    const id = parts.pop() || parts.pop(); 
+    window.location.href = "myapp://movie/" + id;
+  </script>
+
+  <p>Trying to open the app...</p>
+</body>
+</html>
